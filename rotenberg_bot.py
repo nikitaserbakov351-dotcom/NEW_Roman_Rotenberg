@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+"""
+Telegram бот в стиле Романа Ротенберга
+Для запуска на Railway
+"""
+
 import os
 import random
 import asyncio

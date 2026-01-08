@@ -1,0 +1,18 @@
+# Полностью отключаем автоматические фазы
+[phases]
+# Пусто - отключаем все автоматические установки
+
+[install]
+cmds = [
+    "python -m venv /opt/venv",
+    ". /opt/venv/bin/activate",
+    "pip install --upgrade pip",
+    "pip install -r requirements.txt"
+]
+
+[start]
+cmd = ". /opt/venv/bin/activate && python rotenberg_bot.py"
+
+# Отключаем все автоматические сборки
+[variables]
+DISABLE_AUTO_BUILD = "true"
